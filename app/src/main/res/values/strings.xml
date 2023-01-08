@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SophosApp</string>
+    <string name="emailText">Email</string>
+    <string name="passwordText">Password</string>
+    <string name="loginFingerTraceText">Ingresar con huella</string>
+    <string name="loginPageText">Ingresa tus datos para
+        acceder</string>
+    <string name="logoSophos">logoSophos</string>
+    <string-array name="typeDocuments">
+        <item>Tipo de documento</item>
+        <item>CC - CEDULA DE CIUDADANIA</item>
+        <item>CE - CEDULA DE EXTRANJERIA</item>
+        <item>NIP - NUMERO DE IDENTIFICACION PERSONAL</item>
+        <item>NIT - NUMERO DE IDENTIFICACION TRIBUTARIA</item>
+        <item>TI - TARJETA DE IDENTIDAD</item>
+        <item>PAP - PASAPORTE</item>
+    </string-array>
+    <string-array name="cities">
+        <item>Ciudad</item>
+        <item>Medellin</item>
+        <item>Bogota</item>
+    </string-array>
+    <string name="sendDocsText"> Enviar documentos</string>
+    <string name="joinButtonText"> Ingresar</string>
+    <string name="showDocsText"> Ver documentos</string>
+    <string name="officesText"> Oficinas</string>
+    <string name="imageMenuDesc">imageMenuScreen</string>
+    <string name="sendDocsTitle">Envío de documentación</string>
+    <string name="numDocText">Numero de documento</string>
+    <string name="nameText">Nombres</string>
+    <string name="lastNameText">Apellidos</string>
+    <string name="emailAdressText">Correo electronico</string>
+    <string name="typeAttachText">Tipo de Adjunto</string>
+    <string name="docText"> Documento  </string>
+    <string name="docsText">Documentos</string>
+    <string name="dateCase1Text">17/08/22 - Incapacidad</string>
+    <string name="nameCase1Text">Jonathan Camilo Perez Diaz</string>
+    <string name="officesTitle">Oficinas</string>
+</resources>

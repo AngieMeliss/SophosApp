@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.sophosapp.LoginScreenFragment"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" />
+    <fragment
+        android:id="@+id/viewDocumentsFragment"
+        android:name="com.example.sophosapp.ViewDocumentsFragment"
+        android:label="fragment_view_documents"
+        tools:layout="@layout/fragment_view_documents" />
+    <fragment
+        android:id="@+id/officesFragment"
+        android:name="com.example.sophosapp.OfficesFragment"
+        android:label="fragment_offices"
+        tools:layout="@layout/fragment_offices" />
+    <fragment
+        android:id="@+id/sendDocsScreenFragment"
+        android:name="com.example.sophosapp.SendDocsScreenFragment"
+        android:label="fragment_send_docs_screen"
+        tools:layout="@layout/fragment_send_docs_screen" />
+    <fragment
+        android:id="@+id/menuScreenFragment"
+        android:name="com.example.sophosapp.MenuScreenFragment"
+        android:label="fragment_menu_screen"
+        tools:layout="@layout/fragment_menu_screen" />
+    <action
+        android:id="@+id/action_global_menuScreenFragment"
+        app:destination="@id/menuScreenFragment"/>
+    <action
+        android:id="@+id/action_global_officesFragment"
+        app:destination="@id/officesFragment"/>
+    <action
+        android:id="@+id/action_global_viewDocumentsFragment"
+        app:destination="@id/viewDocumentsFragment"/>
+    <action
+        android:id="@+id/action_global_sendDocsScreenFragment"
+        app:destination="@id/sendDocsScreenFragment"/>
+</navigation>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:outlineProvider="bounds"
+    tools:context=".MenuScreenFragment">
+
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/action_bar_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imageView"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.054" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/imageMenuDesc"
+        app:layout_constraintBottom_toTopOf="@id/sendDocsCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/image_menu_screen" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sendDocsCard"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="13.37dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:strokeColor="@color/pink"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sendDocsText"
+                android:textSize="19sp"
+                android:textColor="@color/pink"
+                android:fontFamily="@font/montserrat_medium"
+                app:drawableStartCompat="@drawable/description_pink" />
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/sendDocsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:text="@string/joinButtonText"
+                android:textSize="16sp"
+                android:textColor="@color/pink"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                app:cornerRadius="13dp"
+                app:strokeColor="@color/pink"
+                app:strokeWidth="1dp"
+                android:drawableEnd="@drawable/arrow_right_alt_pink" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/showDocsCard"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="13.37dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/sendDocsCard"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showDocsText"
+                android:textSize="19sp"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_medium"
+                app:drawableStartCompat="@drawable/plagiarism_blue"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/viewDocsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:text="@string/joinButtonText"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                app:cornerRadius="13dp"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="1dp"
+                android:drawableEnd="@drawable/arrow_right_alt_blue" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/officesCard"
+        android:layout_width="0dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="13.37dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/showDocsCard"
+        app:strokeColor="@color/green"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/officesText"
+                android:textSize="19sp"
+                android:textColor="@color/green"
+                android:fontFamily="@font/montserrat_medium"
+                app:drawableStartCompat="@drawable/location_on_green" />
+
+            <com.google.android.material.button.MaterialButton
+                style="?attr/borderlessButtonStyle"
+                android:id="@+id/officesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:text="@string/joinButtonText"
+                android:textSize="16sp"
+                android:textColor="@color/green"
+                android:fontFamily="@font/montserrat_medium"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                app:cornerRadius="13dp"
+                app:strokeColor="@color/green"
+                app:strokeWidth="1dp"
+                android:drawableEnd="@drawable/arrow_right_alt_green" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
